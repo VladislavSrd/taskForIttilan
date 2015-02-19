@@ -1,0 +1,39 @@
+﻿body { 
+    margin: 0;
+    padding: 0;
+    font: 80%/1.5 Arial,Helvetica,sans-serif;
+    color: #111;
+    background-color: #FFF;
+    width: 1300px;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+li.smart_autocomplete_highlight {
+    padding: 3px;
+    background-color: #C1CE84;
+}
+ul {
+    padding: 0;
+    background-color: #E3EBBC;
+}
+
+.form-container {
+     margin: 10px 0 10px 80px;
+     padding: 5px;
+     background-color: #FFF;
+     border: #EEE 1px solid;
+     width: 200px;
+}
+
+.tb-country {
+    margin-bottom:10px;
+    border: 1px solid #C1CE84;
+    border-radius: 4px;
+    display:block;
+}
+fieldset {
+    border:1px solid #EEE;
+}

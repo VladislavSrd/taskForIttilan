@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Задание - страны</title>
+    <script src="~/Content/jquery-2.1.3.min.js"></script>
+    <script src="~/Content/jquery.smart_autocomplete.js"></script>
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('#country_field1').smartAutoComplete({
+                source: "/service/ServiceAjax.svc/Get",
+                maxResults: 5,
+                delay: 200,
+                forceSelect: true
+            });
+        });
+        $(function () {
+            $('#country_field2').smartAutoComplete({
+                source: "/service/ServiceAjax.svc/Get",
+                maxResults: 5,
+                delay: 200,
+                forceSelect: true
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action="#" class="form-container">
+        <fieldset>
+            <legend>Задание</legend>
+                <label for="country_field1">Страны 1</label>
+                <input type="text" autocomplete="off" id="country_field1" class="tb-country">
+
+                <label for="country_field2">Страны 2</label>
+                <input type="text" autocomplete="off" id="country_field2" class="tb-country">
+        </fieldset>
+    </form>
+</body>
+</html>
